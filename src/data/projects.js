@@ -1,5 +1,6 @@
 import BriansBlogThumbnail from '../assets/images/brians-blog-thumbnail.PNG';
 import ImageResizer from '../assets/images/image-resizer-thumbnail.PNG'
+import CloudBooksManager from '../assets/images/cloudbooks-manager-thumbnail.PNG';
 
 const projects = [
   {
@@ -18,6 +19,14 @@ const projects = [
     code: "https://github.com/bwils5/serverless-image-resizer",
     image: ImageResizer
   },
+  {
+    id: 3,
+    name: "CloudBooks Manager",
+    description: "A cloud-based book management system hosted on Render. Built with modern web technologies, it helps users organize and track their book collections.",
+    demo: "https://cloudbooks-manager.onrender.com/",
+    code: "https://github.com/bwils5/cloudbooks-manager",
+    image: CloudBooksManager
+  }
 ];
 
 export default projects;
