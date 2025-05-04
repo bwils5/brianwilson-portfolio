@@ -11,6 +11,7 @@ const Home = lazy(() => import('./pages/Home'));
 const Projects = lazy(() => import('./pages/Projects'));
 const About = lazy(() => import('./pages/About'));
 const Contact = lazy(() => import('./pages/Contact'));
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
 
 // Loading component
 const LoadingFallback = () => (
@@ -54,7 +55,9 @@ function AppContent() {
                 <Link to="/contact" className="text-white hover:text-gray-300 transition-colors duration-200">
                   Contact
                 </Link>
-                <a href="/privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                <Link to="/privacy" className="text-white hover:text-gray-300 transition-colors duration-200">
+                  Privacy Policy
+                </Link>
               </div>
               <button
                 onClick={toggleTheme}
@@ -84,6 +87,7 @@ function AppContent() {
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/privacy" element={<PrivacyPolicy />} />
                   </Routes>
                 </PageTransition>
               </Suspense>
