@@ -54,12 +54,7 @@ function AppContent() {
                 <Link to="/contact" className="text-white hover:text-gray-300 transition-colors duration-200">
                   Contact
                 </Link>
-                <a
-                  href="/privacy.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white hover:text-gray-300 transition-colors duration-200"
-                >
+                <a href="/privacy.html" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors duration-200">
                   Privacy Policy
                 </a>
               </div>
